@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/law-structuras",
+      "handler": "law-structura.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/law-structuras/count",
+      "handler": "law-structura.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/law-structuras/:id",
+      "handler": "law-structura.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/law-structuras",
+      "handler": "law-structura.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/law-structuras/:id",
+      "handler": "law-structura.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/law-structuras/:id",
+      "handler": "law-structura.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

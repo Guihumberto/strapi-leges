@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "comments",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comments": {
+      "type": "richtext"
+    },
+    "lawtext": {
+      "via": "comments",
+      "model": "lawtext"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "comment"
+    },
+    "type": {
+      "type": "integer"
+    }
+  }
+}

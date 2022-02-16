@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "laws",
+  "info": {
+    "name": "law",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "nro_law": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "subjects": {
+      "via": "laws",
+      "collection": "subject",
+      "dominant": true
+    },
+    "law_structuras": {
+      "via": "law",
+      "collection": "law-structura"
+    },
+    "lawtexts": {
+      "via": "law",
+      "collection": "lawtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "law": {
+      "type": "string"
+    },
+    "likes": {
+      "type": "integer"
+    }
+  }
+}

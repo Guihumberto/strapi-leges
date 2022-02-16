@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lawtexts",
+      "handler": "lawtext.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lawtexts/count",
+      "handler": "lawtext.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lawtexts/:id",
+      "handler": "lawtext.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lawtexts",
+      "handler": "lawtext.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lawtexts/:id",
+      "handler": "lawtext.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lawtexts/:id",
+      "handler": "lawtext.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

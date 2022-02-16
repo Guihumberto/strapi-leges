@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "textQuestion": {
+      "type": "text"
+    },
+    "response": {
+      "type": "boolean"
+    },
+    "lawtext": {
+      "via": "questions",
+      "model": "lawtext"
+    },
+    "question_info": {
+      "via": "questions",
+      "model": "question-info"
+    }
+  }
+}

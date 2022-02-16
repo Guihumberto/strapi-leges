@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "question_infos",
+  "info": {
+    "name": "questionInfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "institute": {
+      "type": "string"
+    },
+    "office": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer",
+      "default": 2020
+    },
+    "questions": {
+      "via": "question_info",
+      "collection": "question"
+    },
+    "organizadora": {
+      "model": "bancas"
+    },
+    "area": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lawtexts",
+  "info": {
+    "name": "lawtext",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "law": {
+      "via": "lawtexts",
+      "model": "law"
+    },
+    "questions": {
+      "via": "lawtext",
+      "collection": "question"
+    },
+    "show": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "org": {
+      "type": "integer"
+    },
+    "art": {
+      "type": "integer"
+    },
+    "comments": {
+      "via": "lawtext",
+      "collection": "comments"
+    },
+    "revogado": {
+      "type": "boolean"
+    },
+    "structura": {
+      "type": "boolean"
+    }
+  }
+}
